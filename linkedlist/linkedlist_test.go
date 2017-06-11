@@ -11,7 +11,7 @@ func TestList_Insert(t *testing.T) {
 		name string
 		l    *List
 		args args
-	}{{name: "Hola", l: &List{}, args: args{key: 1}}}
+	}{{name: "Insert a value", l: &List{}, args: args{key: 1}}}
 
 	for _, tt := range tests {
 		tt.l.Insert(tt.args.key)
